@@ -51,6 +51,12 @@ module.exports = {
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       gasPrice: "auto",
     },
+    baseSepolia: {
+      url: process.env.BASE_SEPOLIA_RPC_URL || "https://sepolia.base.org",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      gasPrice: 1000000000, // 1 gwei
+      chainId: 84532,
+    },
   },
   etherscan: {
     apiKey: {
@@ -58,6 +64,7 @@ module.exports = {
       arbitrumOne: process.env.ARBISCAN_API_KEY,
       polygon: process.env.POLYGONSCAN_API_KEY,
       base: process.env.BASESCAN_API_KEY,
+      baseSepolia: process.env.BASESCAN_API_KEY,
     },
   },
   gasReporter: {

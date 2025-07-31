@@ -8,6 +8,8 @@
     "test": "hardhat test",
     "demo": "hardhat run scripts/demo.js",
     "deploy:localhost": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:testnet": "hardhat run scripts/deploy-testnet.js --network baseSepolia",
+    "deploy:sepolia": "hardhat run scripts/deploy-testnet.js --network sepolia",
     "deploy:mainnet": "hardhat run scripts/deploy.js --network mainnet",
     "deploy:arbitrum": "hardhat run scripts/deploy.js --network arbitrum",
     "verify": "hardhat verify",
